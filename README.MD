@@ -2,15 +2,15 @@
 
 Which status you can change:
 
-- `in development`: this ticket is doing
-- `code review`: after you do this task and waiting someone to deploy)
-- `in approver check`: after having 2 approved (1 of Korean team and 1 of Sota team) and merging
-- `ready for qa`: after your code is merged and deployed on staging server, you checked and it worked
+- `in development`:start coding a ticket
+- `code review`: submit code to get review
+- `in approver check`: after ticket has been reviewed and approved (1 of Korean team and 1 of Sota team) and merging
+- `ready for qa`: after your code is merged and deployed on staging server, you checked and it works
 
 # 2. Ticket label:
 
 - `DOWANT`: after this ticket is approved and waiting for deploying on staging. You must set it
-- `hold deploy`: wait a related ticket deploy before this ticket, or it will be over limit times of deploy in day (2
+- `hold deploy`: wait a related ticket to be done/merge together with this ticket, or it will be over limit times of deploy in day (2
   times per day)
 
 # 3. Git flow
@@ -50,7 +50,7 @@ Some rules:
 ## 3.4. Creating PR to code-review
 
 - Change ticket status to `code review`
-- Add reviewer: A Korean team (Mr. Lee ChangWoo) and Sotatek team
+- Add reviewer: A Korean team ( for example @Mr. Lee ChangWoo) and a Sotatek team member
 - Add pull request detail follow this template:
   ```
     1. Description:
