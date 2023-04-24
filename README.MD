@@ -63,7 +63,7 @@ Some rules:
     3. f864c32
     카카오결제 환불 오류건 수정
   ```
-  You can see it (here)[https://github.com/yogiyo/Yogiyo_Web/pull/16288]
+  You can see it [here](https://github.com/yogiyo/Yogiyo_Web/pull/16288)
 
 ## 3.5. If there are any issues in this PR:
 
