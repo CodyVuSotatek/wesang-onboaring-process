@@ -2,7 +2,7 @@
 
 Which status you can change:
 
-- `in development`:start coding a ticket
+- `in development`: start coding a ticket
 - `code review`: submit code to get review
 - `in approver check`: after ticket has been reviewed and approved (1 of Korean team and 1 of Sota team) and merging
 - `ready for qa`: after your code is merged and deployed on staging server, you checked and it works
@@ -33,7 +33,7 @@ Which status you can change:
 **Example**:
 
    ```bash
-    git merge origin mrt-356-something-here
+    git merge origin/mrt-356-something-here
    ```
 
 ## 3.3. Do your change on this branch
@@ -53,13 +53,17 @@ Some rules:
 - Add reviewer: A Korean team ( for example @Mr. Lee ChangWoo) and a Sotatek team member
 - Add pull request detail follow this template:
   ```
-    1. Description:
-    - Create a new API to get a list of restaurant campaign
-    2. Jira task
-    - https://rgpkorea.atlassian.net/browse/MRT-357
-    3. Package
-    - None
+    [ Commit Message ]
+    1. 41c6ad1
+    모듈화 해서 관리하기 위해 SubscriptionPayRequest 가 공짜의 금액인지 is_free 랑 취소 및 환불했을 경우 사용할 cancel 인스턴스 메서드를 생성
+
+    2. 8e5905d
+    이니시스 환불 오류건 수정
+
+    3. f864c32
+    카카오결제 환불 오류건 수정
   ```
+  You can see it (here)[https://github.com/yogiyo/Yogiyo_Web/pull/16288]
 
 ## 3.5. If there are any issues in this PR:
 
@@ -70,7 +74,7 @@ Some rules:
 
 ## 3.6. When you have 2 approves (includes Mr.Lee and Sotatek team)
 
-- Change ticket status to `In approver check`
+- Ticket status will be automatically changed to `In approver check`
 
 ## 3.7. Merge your ticket
 
